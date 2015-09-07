@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Eliza\'s Numbers</string>
+    <string name="tile_activity_main">Guess a Number!</string>
+    <string name="title_activity_display_message">""</string>
+    <string name="header">ELIZA\'S NUMBERS</string>
+    <string name="instructions">Try to guess the number Eliza is thinking of between 1 and 1000.</string>
+    <string name="edit_message">Guess a number</string>
+    <string name="button_send">Guess</string>
+    <string name="remaining_guesses">Guesses Remaining:</string>
+    <string name="rem_guesses">""</string>
+    <string name="past_guesses">Past Guesses:</string>
+    <string name="view_guesses1">""</string>
+    <string name="view_guesses2">""</string>
+    <string name="button_reset">Restart</string>
+    <string name="best_guesses">""</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    
+    <string name="title_activity_display_winner">You\'ve Won!</string>
+    <string name="winner_text">""</string>
+    
+    <string name="title_activity_display_loser">You\'ve Lost.</string>
+    <string name="loser_text">Sorry, you couldn\'t guess Eliza\'s number quickly enough. \n \nBetter luck next time!</string>
+</resources>

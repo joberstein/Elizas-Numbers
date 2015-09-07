@@ -1,0 +1,91 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:fillViewport="true" >
+
+	<GridLayout android:id="@+id/main_activity"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	
+	    android:useDefaultMargins="true"
+	    android:alignmentMode="alignBounds"
+	    android:columnOrderPreserved="false"
+	
+	    android:columnCount="2" 
+	    style="@style/BlueBackground" >
+	    
+	    <TextView
+	        android:text="@string/header"
+	        android:layout_columnSpan="2"
+	        android:layout_gravity="center_horizontal"
+	        android:textScaleX="1.3"
+	        style="@style/SansFont.Large.White" />
+	    
+	    <TextView
+	        android:text="@string/instructions"
+	        android:layout_columnSpan="2"
+	        android:layout_gravity="start" 
+	        style="@style/SansFont.Small.White" />
+	    
+	    <EditText android:id="@+id/edit_message"
+	        android:hint="@string/edit_message" 
+	        android:layout_columnSpan="2"
+	        android:layout_gravity="center_horizontal"
+	        android:inputType="number" 
+	        style="@style/SansFont.Small.Hint" />
+	        
+	    <Button
+	        android:text="@string/button_send" 
+	        android:layout_columnSpan="2"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginBottom="20dp"
+	        android:onClick="sendMessage" 
+	        style="@style/Button" />
+	    
+	    <TextView 
+	        android:text="@string/remaining_guesses"
+	        android:layout_columnSpan="2"
+	        android:textStyle="bold"
+	        android:layout_gravity="center_horizontal" 
+	        style="@style/SansFont.Medium.White" />
+	    
+	    <TextView android:id="@+id/rem_guesses"
+	        android:layout_columnSpan="2"
+	        android:layout_gravity="center_horizontal"
+	        style="@style/SansFont.Small.White" />
+	    
+	    <TextView 
+	        android:text="@string/past_guesses"
+	        android:layout_columnSpan="2"
+	        android:textStyle="bold"
+	        android:layout_gravity="center_horizontal"
+	        style="@style/SansFont.Medium.White" />
+	    
+	    <TextView android:id="@+id/view_guesses1"
+	        android:layout_columnSpan="1"
+	        android:layout_gravity="center_horizontal"
+	        style="@style/SansFont.Small.White" />
+	    
+	    <TextView android:id="@+id/view_guesses2"
+	        android:layout_columnSpan="1"
+	        android:layout_gravity="center_horizontal"
+	        style="@style/SansFont.Small.White" />
+	    
+	    <TextView android:id="@+id/best_guesses"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:paddingBottom="10dp"
+	        android:layout_gravity="bottom|start"
+	        style="@style/SansFont.Medium.White" />
+	    
+	    <Button
+	        android:text="@string/button_reset"
+	        android:layout_gravity="bottom|right"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:onClick="resetMysteryNumber" 
+	        style="@style/Button" />
+	
+	</GridLayout>
+	
+</ScrollView>
